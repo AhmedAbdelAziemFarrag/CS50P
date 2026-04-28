@@ -1,14 +1,18 @@
 results = ["Mario", "Luigi"]
-results.append("Princess")
-print(results)
 
-results.extend(["Yoshi", "Koopa Troopa", "Toad", "Bowser", "Donkey Kong Jr."])
+results.append("Princess")
+results.insert(0, "Bowser")
 print(results)
 
 results.remove("Bowser")
 print(results)
 
-results.insert(0, "Bowser")
+results.append(["Yoshi", "Koopa Troopa", "Toad"])
+print(results)
+results.remove(["Yoshi", "Koopa Troopa", "Toad"])
+print(results)
+
+results.extend(["Yoshi", "Koopa Troopa", "Toad"])
 print(results)
 
 results.reverse()
